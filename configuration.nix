@@ -128,6 +128,7 @@
     neovim
     vscode
     typst
+    typst-live
     tmux
   ];
 
