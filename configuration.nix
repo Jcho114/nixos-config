@@ -128,6 +128,7 @@
     neovim
     vscode
     typst
+    tmux
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
