@@ -122,7 +122,7 @@
     vim
     git
     ghostty
-    discord-ptb
+    discord
     fastfetch
     google-chrome
   ];
