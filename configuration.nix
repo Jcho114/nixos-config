@@ -130,6 +130,7 @@
     typst
     typst-live
     tmux
+    python3Full
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
