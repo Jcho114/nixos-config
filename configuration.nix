@@ -125,6 +125,7 @@
     discord
     fastfetch
     google-chrome
+    neovim
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
