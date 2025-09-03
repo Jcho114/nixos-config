@@ -134,6 +134,7 @@
     go
     zoxide
     bat
+    gnumake
   ];
 
   environment.shellAliases = {
