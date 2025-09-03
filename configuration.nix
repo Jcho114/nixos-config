@@ -132,7 +132,13 @@
     tmux
     python3Full
     go
+    zoxide
+    bat
   ];
+
+  environment.shellAliases = {
+    cd = "z";
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

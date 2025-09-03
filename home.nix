@@ -6,6 +6,8 @@
   home.username = "jcho1114";
   home.homeDirectory = "/home/jcho1114";
 
+  programs.bash.enable = true;
+
   programs.git = {
     enable = true;
     extraConfig = {
@@ -20,6 +22,11 @@
 
   programs.ghostty = {
     enable = true;
+  };
+
+  programs.zoxide = {
+    enable = true;
+    enableBashIntegration = true;
   };
 
   # This value determines the Home Manager release that your configuration is
