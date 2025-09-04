@@ -8,7 +8,6 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      inputs.home-manager.nixosModules.default
     ];
 
   # Bootloader.
@@ -104,13 +103,6 @@
     packages = with pkgs; [
       kdePackages.kate
     ];
-  };
-
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    users = {
-      "jcho1114" = import ./home.nix;
-    };
   };
 
   # Install firefox.
