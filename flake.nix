@@ -17,11 +17,11 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./configuration.nix
-	home-manager.nixosModules.default {
-	  home-manager.useGlobalPkgs = true;
-	  home-manager.useUserPackages = true;
-	  home-manager.users.jcho1114 = import ./home.nix;
-	}
+        home-manager.nixosModules.default {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.jcho1114 = import ./home.nix;
+        }
       ];
     };
   };
