@@ -4,8 +4,7 @@
     enable = true;
   };
 
-  home.file.".config/ghostty/config".text = ''
-    command = zsh
-    initial-command = fastfetch
+  home.file."./.config/ghostty/config".text = ''
+    command = zsh --login
   '';
 }
