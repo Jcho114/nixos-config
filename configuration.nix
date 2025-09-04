@@ -132,6 +132,7 @@
     gnumake
     zsh
     remmina
+    zsh-powerlevel10k
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
