@@ -77,7 +77,6 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    ".config/ghostty/config".source = ./ghostty.config;
   };
 
   # Home Manager can also manage your environment variables through
