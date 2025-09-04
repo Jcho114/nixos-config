@@ -6,7 +6,12 @@
   home.username = "jcho1114";
   home.homeDirectory = "/home/jcho1114";
 
-  programs.bash.enable = true;
+  programs.zsh.enable = true;
+  programs.zsh = {
+    shellAliases = {
+      cd = "z";
+    };
+  };
 
   programs.git = {
     enable = true;
@@ -26,7 +31,7 @@
 
   programs.zoxide = {
     enable = true;
-    enableBashIntegration = true;
+    enableZshIntegration = true;
   };
 
   # This value determines the Home Manager release that your configuration is

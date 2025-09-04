@@ -93,8 +93,11 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
+  programs.zsh.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jcho1114 = {
+    shell = pkgs.zsh;
     isNormalUser = true;
     description = "Joseph Cho";
     extraGroups = [ "networkmanager" "wheel" ];
@@ -135,11 +138,9 @@
     zoxide
     bat
     gnumake
+    zsh
+    remmina
   ];
-
-  environment.shellAliases = {
-    cd = "z";
-  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
