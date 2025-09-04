@@ -6,8 +6,8 @@
   home.username = "jcho1114";
   home.homeDirectory = "/home/jcho1114";
 
-  programs.zsh.enable = true;
   programs.zsh = {
+    enable = true;
     shellAliases = {
       cd = "z";
     };
@@ -27,6 +27,7 @@
 
   programs.ghostty = {
     enable = true;
+    enableZshIntegration = true;
   };
 
   programs.zoxide = {
