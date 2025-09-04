@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./ghostty.nix
+  ];
+
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "jcho1114";
@@ -23,11 +27,6 @@
         "/etc/nixos"
       ];
     };
-  };
-
-  programs.ghostty = {
-    enable = true;
-    enableZshIntegration = true;
   };
 
   programs.zoxide = {
@@ -78,6 +77,7 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
+    ".config/ghostty/config".source = ./ghostty.config;
   };
 
   # Home Manager can also manage your environment variables through
