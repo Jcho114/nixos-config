@@ -138,7 +138,13 @@
     # languages
     python3Full
     go
+
+    # languages for cmsc389b (remove after semester)
     lua
+    swi-prolog
+    gforth
+    j
+    miranda
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
