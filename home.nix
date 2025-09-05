@@ -24,7 +24,7 @@
       }
       {
         name = "powerlevel10k-config";
-	src = ./;
+	src = builtins.toString ./.;
 	file = "p10k.zsh";
       }
     ];
