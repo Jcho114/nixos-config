@@ -3,6 +3,7 @@
 {
   imports = [
     ./zsh.nix
+    ./git.nix
     ./ghostty.nix
     ./tmux.nix
   ];
@@ -11,18 +12,6 @@
   # manage.
   home.username = "jcho1114";
   home.homeDirectory = "/home/jcho1114";
-
-  programs.git = {
-    enable = true;
-    extraConfig = {
-      user.name = "Jcho114";
-      user.email = "joseph.cho20@gmail.com";
-      init.defaultBranch = "main";
-      safe.directory = [
-        "/etc/nixos"
-      ];
-    };
-  };
 
   programs.zoxide = {
     enable = true;
