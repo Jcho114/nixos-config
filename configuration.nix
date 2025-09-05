@@ -114,25 +114,30 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    # terminal stuff
     vim
     git
     ghostty
-    discord
     fastfetch
-    google-chrome
     neovim
-    vscode
     typst
     typst-live
     tmux
-    python3Full
-    go
     zoxide
     bat
     gnumake
     zsh
-    remmina
     zsh-powerlevel10k
+
+    # apps
+    discord
+    google-chrome
+    vscode
+    remmina
+
+    # languages
+    python3Full
+    go
     lua
   ];
 
