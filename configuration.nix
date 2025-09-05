@@ -133,6 +133,7 @@
     zsh
     remmina
     zsh-powerlevel10k
+    lua
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
