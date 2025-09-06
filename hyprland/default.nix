@@ -7,6 +7,26 @@
   home.sessionVariables.NIXOS_OZONE_WL = "1";
 
   wayland.windowManager.hyprland.settings = {
+    "$mod" = "SUPER";
+    bind = [
+      "$mod, G, exec, google-chrome-stable" # open google chrome
+      ", Print, exec, grimblast copy area" # screenshot
+    ]
+    ++ (
+      # workspaces
+      # binds $mod + [shift +] {1..9} to [move to] workspace {1..9}
+      builtins.concatLists (builtins.genList (i:
+        let ws = i + 1;
+        in [
+          "$mod, code:1${toString i}, workspace, ${toString ws}"
+          "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
+        ]
+      )
+      9)
+    );
 
+    exec-once = ''
+      ${pkgs.waybar}/bin/waybar
+    '';
   };
 }

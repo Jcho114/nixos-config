@@ -33,6 +33,7 @@
 
   # Hyprland
   programs.hyprland.enable = true;
+  programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -152,6 +153,9 @@
 
     # hyprland
     kitty
+    waybar
+    swww
+    rofi-wayland
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
