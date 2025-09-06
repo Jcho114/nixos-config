@@ -14,11 +14,11 @@
 
     general = {
       gaps_in = 6;
-      gaps_out = 8;
+      gaps_out = 6;
       border_size = 2;
       resize_on_border = true;
       layout = "dwindle";
-      "col.active_border" = "rgb(3b82f6) rgb(41e3a8) 45deg";
+      "col.active_border" = "rgb(e5e6e4) rgb(ffffff) 45deg";
       "col.inactive_border" = "rgba(595959aa)";
     };
 
