@@ -32,7 +32,7 @@
   nix.settings.auto-optimise-store = true;
 
   # Hyprland
-  progams.hyprland.enable;
+  progams.hyprland.enable = true;
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
