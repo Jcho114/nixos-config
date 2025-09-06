@@ -5,12 +5,16 @@
   # Hint Electron apps to use Wayland
   home.sessionVariables.NIXOS_OZONE_WL = "1";
 
+  wayland.windowManager.hyprland.extraConfig = ''
+    monitor=,preferred,auto,1
+  '';
+
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";
 
     general = {
       gaps_in = 6;
-      gaps_out = 8;
+      gaps_out = 20;
       border_size = 2;
       resize_on_border = true;
       layout = "dwindle";
