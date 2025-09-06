@@ -48,7 +48,7 @@
       ", Print, exec, grimblast copy area"
       "$mod, Return, exec, ghostty"
       "$mod, K, exec, list-keybinds"
-      "$mod SHIFT, Return, exec, rofi-launcher"
+      "$mod SHIFT, Return, exec, rofi -show drun"
       "$mod, D, exec, discord"
       "$mod, Q, killactive"
       "$mod, F, fullscreen"
