@@ -92,7 +92,10 @@
     );
 
     exec-once = ''
-      ${pkgs.waybar}/bin/waybar
+      ${pkgs.waybar}/bin/waybar &&
+      ${pkgs.swww}/bin/swww init &&
+      sleep 1 &&
+      ${pkgs.swww}/bin/swww img ${./steins.jpg}
     '';
   };
 }
