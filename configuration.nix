@@ -134,6 +134,7 @@
     google-chrome
     vscode
     remmina
+    spotify
 
     # languages
     python3Full
@@ -145,6 +146,9 @@
     gforth
     j
     miranda
+
+    # hyprland
+    kitty
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
