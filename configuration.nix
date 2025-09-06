@@ -152,7 +152,6 @@
     miranda
 
     # hyprland
-    kitty
     waybar
     swww
     rofi-wayland
