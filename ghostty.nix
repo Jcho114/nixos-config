@@ -12,5 +12,7 @@
     background-blur-radius = 20
     window-width = 140
     window-height = 40
+    window-padding-x = 6
+    window-padding-y = 6
   '';
 }
