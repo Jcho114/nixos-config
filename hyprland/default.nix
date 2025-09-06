@@ -19,7 +19,7 @@
     };
 
     dwindle = {
-      psuedotile = true;
+      pseudotile = true;
       preserve_split = true;
     };
 
@@ -60,7 +60,7 @@
       "$mod ALT, left, swapwindow, l"
       "$mod ALT, right, swapwindow, r"
       "$mod ALT, up, swapwindow, u"
-      "$mod ALT, down, swapwindow d"
+      "$mod ALT, down, swapwindow, d"
       "$mod, left, movefocus, l"
       "$mod, right, movefocus, r"
       "$mod, up, movefocus, u"
