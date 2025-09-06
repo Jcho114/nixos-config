@@ -157,6 +157,15 @@
     rofi-wayland
   ];
 
+  fonts.packages = with pkgs; [
+    noto-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-emoji
+    nerd-fonts.ubuntu
+    nerd-fonts.ubuntu-sans
+    nerd-fonts.ubuntu-mono
+  ];
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
