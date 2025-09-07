@@ -112,7 +112,7 @@
 }
 
 window#waybar {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.95);
     color: white;
 }
 
