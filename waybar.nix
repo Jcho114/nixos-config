@@ -107,12 +107,12 @@
     border: none;
     border-radius: 0;
     font-family: "Ubuntu Nerd Font";
-    font-size: 13px;
+    font-size: 14px;
     min-height: 0;
 }
 
 window#waybar {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.7);
     color: white;
 }
 

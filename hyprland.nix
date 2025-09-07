@@ -91,11 +91,10 @@
       9)
     );
 
-    exec-once = ''
-      ${pkgs.waybar}/bin/waybar &&
-      ${pkgs.swww}/bin/swww init &&
-      sleep 1 &&
-      ${pkgs.swww}/bin/swww img ${./steins.jpg}
-    '';
+    exec-once = [
+      "killall -q swww; sleep .5 && ${pkgs.swww}/bin/swww-daemon"
+      "killall -q waybar; sleep .5 && ${pkgs.waybar}/bin/waybar"
+      "sleep 1.0 && ${pkgs.swww}/bin/swww img ${./steins.jpg}"
+    ];
   };
 }
