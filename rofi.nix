@@ -1,116 +1,114 @@
 { config, ... }:
 {
+  programs.rofi = {
+    enable = true;
+    theme = builtins.toFile "rofi-theme.rasi" ''
 
-  home.file.".config/rofi/rofi.conf" = {
-
-    # Overwrite the file
-    force = true;
-
-    # Use rofi-theme-selector for themes
-    text = ''
-
-// Rofi rounded yellow
-
-// Colors
-* {
-    bg0:    #272E33;
-    bg1:    #2A2A2A;
-    bg2:    #3D3D3D80;
-    bg3:    #0b6495;
-    fg0:    #E6E6E6;
-    fg1:    #FFFFFF;
-    fg2:    #969696;
-    fg3:    #3D3D3D;
-}
+/* ROFI SQUARED THEME USING THE NORD PALETTE  */
+/* Author: Newman Sanchez (https://github.com/newmanls) */
 
 * {
-    font:   "Roboto 12";
+    font:   "FiraCode Nerd Font Medium 12";
+
+    bg0:     #2E3440;
+    bg1:     #3B4252;
+    fg0:     #D8DEE9;
+
+    accent-color:     #88C0D0;
+    urgent-color:     #EBCB8B;
 
     background-color:   transparent;
     text-color:         @fg0;
 
-    margin:     0px;
-    padding:    0px;
-    spacing:    0px;
+    margin:     0;
+    padding:    0;
+    spacing:    0;
 }
 
 window {
-    location:       center;
-    width:          480;
-    border-radius:  24px;
-    
+    location:   center;
+    width:      480;
+
     background-color:   @bg0;
 }
 
-mainbox {
-    padding:    12px;
+inputbar {
+    spacing:    8px;
+    padding:    8px;
+
+    background-color:   @bg1;
 }
 
-inputbar {
-    background-color:   @bg1;
-    border-color:       @bg3;
-
-    border:         2px;
-    border-radius:  16px;
-
-    padding:    8px 16px;
-    spacing:    8px;
-    children:   [ prompt, entry ];
+prompt, entry, element-icon, element-text {
+    vertical-align: 0.5;
 }
 
 prompt {
-    text-color: @fg2;
-}
-
-entry {
-    placeholder:        "Search";
-    placeholder-color:  @fg3;
-}
-
-message {
-    margin:             12px 0 0;
-    border-radius:      16px;
-    border-color:       @bg2;
-    background-color:   @bg2;
+    text-color: @accent-color;
 }
 
 textbox {
-    padding:    8px 24px;
+    padding:            8px;
+    background-color:   @bg1;
 }
 
 listview {
-    background-color:   transparent;
-
-    margin:     12px 0 0;
+    padding:    4px 0;
     lines:      8;
     columns:    1;
 
-    fixed-height: false;
+    fixed-height:   false;
 }
 
 element {
-    padding:        8px 16px;
-    spacing:        8px;
-    border-radius:  16px;
+    padding:    8px;
+    spacing:    8px;
+}
+
+element normal normal {
+    text-color: @fg0;
+}
+
+element normal urgent {
+    text-color: @urgent-color;
 }
 
 element normal active {
-    text-color: @bg3;
+    text-color: @accent-color;
+}
+
+element alternate active {
+    text-color: @accent-color;
+}
+
+element selected {
+    text-color: @bg0;
 }
 
 element selected normal, element selected active {
-    background-color:   @bg3;
+    background-color:   @accent-color;
+}
+
+element selected urgent {
+    background-color:   @urgent-color;
 }
 
 element-icon {
-    size:           1em;
-    vertical-align: 0.5;
+    size:   0.8em;
 }
 
 element-text {
     text-color: inherit;
 }
 
-  '';
+    '';
+
+    extraConfig = {
+      show-icons = true;
+      drun-display-format = "{icon} {name}";
+      display-drun = "󱄅  ";
+      sidebar-mode = false;
+      location = 0;
+    };
   };
 }
