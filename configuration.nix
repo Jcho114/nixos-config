@@ -155,6 +155,8 @@
     waybar
     swww
     rofi-wayland
+    dunst
+    brightnessctl
   ];
 
   fonts.packages = with pkgs; [
