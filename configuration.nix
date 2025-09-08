@@ -157,6 +157,7 @@
     rofi-wayland
     dunst
     brightnessctl
+    networkmanagerapplet
   ];
 
   fonts.packages = with pkgs; [
