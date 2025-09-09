@@ -139,6 +139,7 @@
     vscode
     remmina
     spotify
+    slack
 
     # languages
     python3Full
