@@ -159,6 +159,7 @@
     dunst
     brightnessctl
     networkmanagerapplet
+    grimblast
   ];
 
   fonts.packages = with pkgs; [
