@@ -35,6 +35,9 @@
   programs.hyprland.enable = true;
   programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
 
+  # Docker
+  virtualisation.docker.enable = true;
+
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
@@ -160,6 +163,9 @@
     brightnessctl
     networkmanagerapplet
     grimblast
+
+    # cursed
+    docker
   ];
 
   fonts.packages = with pkgs; [
