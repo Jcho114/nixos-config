@@ -19,6 +19,7 @@
           servers = {
             clangd.enable = true;
             nixd.enable = true;
+            tinymist.enable = true;
           };
         };
 
