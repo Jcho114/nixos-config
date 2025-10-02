@@ -100,6 +100,7 @@
     exec-once = [
       "killall -q swww; sleep .5 && ${pkgs.swww}/bin/swww-daemon"
       "killall -q waybar; sleep .5 && ${pkgs.waybar}/bin/waybar"
+      "killall -q dunst; sleep .5 && ${pkgs.dunst}/bin/dunst"
       "sleep 1.0 && ${pkgs.swww}/bin/swww img ${./steins.jpg}"
     ];
   };

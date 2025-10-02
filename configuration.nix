@@ -135,6 +135,7 @@
     gnumake
     zsh
     zsh-powerlevel10k
+    zip
 
     # apps
     discord
@@ -147,6 +148,19 @@
     # languages
     python3Full
     go
+
+    # c stuff
+    gcc
+    openssl.dev
+
+    # robotics
+    cmake
+    gcc-arm-embedded
+    openocd
+    gdb
+    stlink-gui
+    minicom
+    stm32cubemx
 
     # languages for cmsc389b (remove after semester)
     lua
@@ -166,6 +180,8 @@
 
     # cursed
     docker
+
+    dos2unix
   ];
 
   fonts.packages = with pkgs; [
