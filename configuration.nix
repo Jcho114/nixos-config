@@ -152,6 +152,7 @@
     # c stuff
     gcc
     openssl.dev
+    clang-tools
 
     # robotics
     cmake
