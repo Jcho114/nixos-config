@@ -185,6 +185,9 @@
     docker
 
     dos2unix
+
+    # studying
+    anki-bin
   ];
 
   fonts.packages = with pkgs; [
