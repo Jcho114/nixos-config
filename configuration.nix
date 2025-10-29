@@ -106,7 +106,7 @@
     shell = pkgs.zsh;
     isNormalUser = true;
     description = "Joseph Cho";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
       kdePackages.kate
     ];
@@ -162,6 +162,8 @@
     stlink-gui
     minicom
     stm32cubemx
+    screen
+    putty
 
     # languages for cmsc389b (remove after semester)
     lua
