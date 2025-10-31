@@ -183,6 +183,7 @@
 
     # cursed
     docker
+    terraform
 
     dos2unix
 

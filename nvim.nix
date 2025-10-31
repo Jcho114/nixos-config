@@ -20,6 +20,7 @@
             clangd.enable = true;
             nixd.enable = true;
             tinymist.enable = true;
+            gopls.enable = true;
           };
         };
 
@@ -27,6 +28,7 @@
           enable = true;
           grammars = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
             c
+            go
             nix
           ];
           addDefaultGrammars = true;
