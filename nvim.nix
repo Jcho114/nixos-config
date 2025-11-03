@@ -21,6 +21,7 @@
             nixd.enable = true;
             tinymist.enable = true;
             gopls.enable = true;
+            terraform-ls.enable = true;
           };
         };
 
@@ -30,6 +31,7 @@
             c
             go
             nix
+            hcl
           ];
           addDefaultGrammars = true;
           highlight.enable = true;

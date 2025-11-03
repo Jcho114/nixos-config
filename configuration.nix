@@ -19,6 +19,8 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  nix.settings.download-buffer-size = 524288000;
+
   hardware.bluetooth.enable = true;
 
   # Automatic updating
@@ -124,6 +126,7 @@
     # terminal stuff
     vim
     git
+    libsecret
     ghostty
     fastfetch
     neovim
@@ -146,7 +149,7 @@
     slack
 
     # languages
-    python3Full
+    python314
     go
 
     # c stuff
@@ -175,7 +178,7 @@
     # hyprland
     waybar
     swww
-    rofi-wayland
+    rofi
     dunst
     brightnessctl
     networkmanagerapplet
@@ -184,6 +187,8 @@
     # cursed
     docker
     terraform
+    terraform-ls
+    azure-cli
 
     dos2unix
 
@@ -194,7 +199,7 @@
   fonts.packages = with pkgs; [
     noto-fonts
     noto-fonts-cjk-sans
-    noto-fonts-emoji
+    noto-fonts-color-emoji
     nerd-fonts.ubuntu
     nerd-fonts.ubuntu-sans
     nerd-fonts.ubuntu-mono
