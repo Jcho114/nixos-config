@@ -33,6 +33,8 @@
   nix.gc.options = "--delete-older-than 10d";
   nix.settings.auto-optimise-store = true;
 
+  programs.nix-ld.enable = true;
+
   # Hyprland
   programs.hyprland.enable = true;
   programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
@@ -157,6 +159,17 @@
     openssl.dev
     clang-tools
 
+    # cmsc417
+    qbittorrent
+    tcpdump
+    nix-ld
+    wireshark
+    protobufc
+    mktorrent
+    unzip
+    unixtools.ifconfig
+    transmission_4-gtk
+
     # robotics
     cmake
     gcc-arm-embedded
@@ -219,7 +232,7 @@
   # services.openssh.enable = true;
 
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
+  # networking.firewall.allowedTCPPorts = [ 51413 ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
