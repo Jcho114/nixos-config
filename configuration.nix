@@ -167,8 +167,6 @@
     protobufc
     mktorrent
     unzip
-    unixtools.ifconfig
-    transmission_4-gtk
 
     # robotics
     cmake
