@@ -205,6 +205,9 @@
 
     # studying
     anki-bin
+
+    # random
+    opencode
   ];
 
   fonts.packages = with pkgs; [
