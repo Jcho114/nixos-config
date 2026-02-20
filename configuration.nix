@@ -180,13 +180,6 @@
     screen
     putty
 
-    # languages for cmsc389b (remove after semester)
-    lua
-    swi-prolog
-    gforth
-    j
-    miranda
-
     # hyprland
     waybar
     swww
