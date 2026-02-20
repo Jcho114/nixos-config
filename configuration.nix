@@ -141,6 +141,7 @@
     zsh
     zsh-powerlevel10k
     zip
+    wl-clipboard-x11
 
     # apps
     discord
